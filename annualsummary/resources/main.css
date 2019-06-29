@@ -1,0 +1,272 @@
+@CHARSET "UTF-8";
+@font-face {
+    font-family: 'Vegur';
+    src: url('fonts/vegur-light.eot');
+    src: url('fonts/vegur-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vegur-light.woff') format('woff'),
+         url('fonts/vegur-light.ttf') format('truetype'),
+         url('fonts/vegur-light.otf') format('opentype'),
+         url('fonts/vegur-light.svg#VegurLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vegur';
+    src: url('fonts/vegur-bold.eot');
+    src: url('fonts/vegur-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vegur-bold.woff') format('woff'),
+         url('fonts/vegur-bold.ttf') format('truetype'),
+         url('fonts/vegur-bold.otf') format('opentype'),
+         url('fonts/vegur-bold.svg#VegurBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body,h1,h2,h3,h4,h5,h6,hr,p,ul,ol,li,pre,form,input,textarea,th,td{
+  margin: 0;
+  padding: 0;
+  color:#333333;
+  font: normal 13px Microsoft YaHei, Arial, Verdana, sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+ul,ol,li{
+  list-style:none outside none;
+  word-wrap:break-word;
+  word-break:normal;
+}
+
+p,h1,h2,h3{
+  background-color:transparent;
+}
+
+div {
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+#headerWrapper {
+	width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header {
+  padding: 10px 0;
+  margin: 0 28px 0px;
+  border-bottom: solid 1px #BCBCBC;
+  position: relative;
+}
+
+#mainContent {
+  margin-top: 100px;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px auto;
+}
+
+#footer div {
+  margin: 5px auto;
+}
+
+#header .title {
+  font-size: 43px;
+  font-family: Vegur;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+#header .sub-title {
+  font-size: 26px;
+  font-family: Vegur;
+  color: #BBBBBB;
+}
+
+.main-navi {
+  clear: both;
+  float: right;
+}
+
+.main-navi li {
+  list-style: none;
+  margin: 20px 0 0 40px;
+  float: left;
+}
+
+.main-navi li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.main-navi li a:hover {
+  color: #888888;
+  text-decoration: none;
+}
+
+.main-navi li.selected a {
+  color: #60A5E0;
+  cursor: default;
+  text-decoration: none;
+}
+
+.content-item {
+  width: 996px;
+  margin: 8px auto 40px;
+  padding-bottom: 60px;
+  border-bottom: solid 1px #DDDDDD;
+}
+
+.content-item .banner-title {
+  text-align: center;
+  font-size: 85px;
+  font-family: Vegur;
+}
+
+#timeline .month {
+  margin: 15px 0 10px 28px;
+  padding: 11px 10px 11px 18px;
+  float: left;
+  width: 192px;
+  height: 130px;
+  border: solid 0px #FFFFFF;
+  border-width: 0 1px 0 0;
+  cursor: pointer;
+  color: #333333;
+}
+
+#timeline .month:hover {
+  padding: 10px;
+  border-width: 1px 1px 1px 8px;
+}
+
+#timeline .month .title {
+  font-size: 60px;
+  font-family: Vegur;
+}
+
+#timeline .month .sub-title {
+  font-size: 18px;
+  font-family: Vegur;
+  color: #ADADAD;
+}
+
+.content-item .banner {
+	margin: 88px auto 39px;
+}
+
+.banner-desc label {
+  font-size: 33px;
+  font-family: "黑体";
+  color: #333333; 
+}
+
+.banner-desc p {
+  font-size: 23px;
+  color: #AAAAAA;
+  margin: 12px 0; 
+}
+
+#challenge .banner-desc {
+  margin: 30px auto 10px;
+}
+
+#challenge .banner-desc p, #myplan .banner-desc {
+  margin: 40px auto 30px;
+}
+
+#summary .banner-desc p {
+  margin: 70px auto 30px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -370px;
+  padding: 20px;
+  width: 700px;
+  background: #FFFFFF;
+  font-family: Vegur;
+  box-shadow: 5px 5px 6px #434343;
+  border-radius: 12px;
+}
+
+#popup .month-title {
+  font-size: 60px;
+  float: left;
+}
+
+#popup .pop-content {
+  float: left;
+  width: 510px;
+  margin: 5px 0 0 22px;
+  padding-left: 22px;
+  border-left: solid 1px #BBBBBB;
+}
+
+#popup .pop-content label {
+  font-size: 36px;
+  color: #5599CC;
+}
+
+#popup .pop-content p {
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+#popup .pop-content img {
+  margin-top: 20px;
+}
+
+#myplan label {
+	color: #2566BB;
+	font-size: 30px;
+	display: block;
+	margin: 25px auto 12px;
+}
+
+#myplan li {
+  font-size: 16px;
+  margin: 12px 0 6px 36px;
+}
